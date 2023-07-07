@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_example</title>
+    <style>
+      .static-example {
+       position: static;
+       border: 1px solid black;
+       padding: 10px;}
+
+     .fixed-example {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      border: 1px solid black;
+      padding: 10px;}
+
+      .sticky-example {
+      position: sticky;
+      top: 50px;
+      background-color: lightblue;
+      border: 1px solid black;
+      padding: 10px;}
+
+      .relative-example {
+      position: relative;
+      left: 50px;
+      border: 1px solid black;
+      padding: 10px;}
+
+      .absolute-example {
+     position: absolute;
+     top: 100px;
+     right: 20px;
+     border: 1px solid black;
+     padding: 10px;}
+    </style>
+</head>
+<body>
+    <!-- Static:
+    The default position value is "static." Elements with a static position are positioned according to the normal document flow. They are not affected by the top, bottom, left, or right properties.
+    html -->
+    <div class="static-example">
+        This is a static positioned element.
+      </div>
+
+     <!-- Fixed:
+     A fixed positioned element is positioned relative to the viewport (the browser window). It remains fixed even when the page is scrolled. Use the top, bottom, left, and right properties to control its position. -->
+      <div class="fixed-example">
+        This is a fixed positioned element.
+      </div>
+
+      <!-- Sticky:
+      A sticky positioned element is positioned based on the user's scroll position. It behaves like a relatively positioned element until the user scrolls to a specific threshold. After that, it becomes fixed until the user scrolls back up. Use the top, bottom, left, and right properties to specify the offset. -->
+      <div class="sticky-example">
+        This is a sticky positioned element.
+      </div>
+
+        <!-- Relative:
+        A relatively positioned element is positioned relative to its normal position in the document flow. It can be moved using the top, bottom, left, and right properties. -->
+      <div class="relative-example">
+        This is a relatively positioned element.
+      </div>
+
+      <!-- Absolute:
+    An absolutely positioned element is positioned relative to its nearest positioned ancestor (an ancestor with a position value other than static) or the initial containing block. It does not affect the position of other elements. Use the top, bottom, left, and right properties to control its position. -->
+      <div class="absolute-example">
+        This is an absolutely positioned element.
+      </div>
+             
+</body>
+</html>
